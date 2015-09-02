@@ -1,5 +1,5 @@
 structures:
-	gcc -o goTests.o stack.c queue.c tests.c -std=c11
+	gcc -o goTests.o src/stack.c src/queue.c tests/tests.c -std=c11 -I./inc/
 
 .PHONY: clean
 clean:

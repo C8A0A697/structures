@@ -86,6 +86,6 @@ int main()
 	}
 
 	freeStack(stack);
-	destroyQueue(queue);
+	freeQueue(queue);
 	return 1;
 }

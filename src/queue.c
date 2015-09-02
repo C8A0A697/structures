@@ -32,6 +32,7 @@ void enqueue(Queue *queue, QueueElement element)
 	queue->elements[queue->n++] = element;
 }
 
+//remove an element from a queue
 QueueElement dequeue(Queue *queue)
 {
 	if(queue->n == 0) {
@@ -46,8 +47,8 @@ QueueElement dequeue(Queue *queue)
 	return element;
 }
 
-//destoys an existing queue
-void destroyQueue(Queue *queue)
+//free the memory of a dynamically allocated queue and its elements
+void freeQueue(Queue *queue)
 {
 	if(queue != NULL) {
 		queue->n = 0;

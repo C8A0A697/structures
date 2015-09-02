@@ -31,7 +31,7 @@ typedef struct {
 
 Queue *newQueue();
 
-void destroyQueue(Queue *queue);
+void freeQueue(Queue *queue);
 
 void enqueue(Queue *queue, QueueElement element);
 
